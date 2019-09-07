@@ -7,6 +7,8 @@ public interface TestService {
     String sayHello(String str);
 
     User findUser();
+
+    String addDingshi();
 }
 
 

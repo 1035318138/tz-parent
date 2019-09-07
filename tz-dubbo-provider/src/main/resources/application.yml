@@ -1,6 +1,6 @@
 server:
   port: 8082
-  context-path: /
+#  context-path: /
 spring:
  datasource:
         name: test
@@ -25,3 +25,13 @@ spring:
         maxOpenPreparedStatements: 20
         mybatis:
           type-aliases-package:  domain
+jpa:
+        hibernate:
+          ddl-auto: update  # 第一次建表create  后面用update，要不然每次重启工程会删除表并新建
+        show-sql: true
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+

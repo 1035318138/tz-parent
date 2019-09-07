@@ -19,8 +19,8 @@ public class TestController {
         return testService.sayHello("Hello springboot and dubbo!");
     }
 
-    @GetMapping("user")
-    public User user() {
-        return testService.findUser();
-    }
+//    @GetMapping("user")
+//    public User user() {
+//        return testService.findUser();
+//    }
 }
